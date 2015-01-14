@@ -1,0 +1,11 @@
+machine:
+  node:
+    version: v0.10.28
+database:
+  post:
+   - bin/resettestdb.sh
+#deployment:
+#  ci:
+#    branch: master
+#    commands:
+#    - ssh youpers@rev-ci.youpers.com 'bash -s' < bin/deploy.sh master rev-ci
