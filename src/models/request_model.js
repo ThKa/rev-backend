@@ -17,7 +17,7 @@ var RequestSchema = common.newSchema({
     status: { type: String, enum: enums.requestStatus, default: "open" },
     location: {type: [Number], index: '2d'},
     further-description: {type: String, trim: true, i18n: true, required: false},
-    category: { type: String, enum: ['SmRe', 'Comp', 'Gard']}
+    category: { type: String, enum: ['SmRe', 'Comp', 'Gard', 'Baby', 'AniC', 'OfWo', 'TecS']}
 });
 
 module.exports = mongoose.model('Request', RequestSchema);
