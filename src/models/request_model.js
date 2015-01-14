@@ -14,7 +14,8 @@ var mongoose = require('ypbackendlib').mongoose,
 
 var RequestSchema = common.newSchema({
     owner: { type: ObjectId, ref: 'User', required: true },
-    status: { type: String, enum: enums.requestStatus, default: "open" }
+    status: { type: String, enum: enums.requestStatus, default: "open" },
+    location: {type: [Number], index: '2d'}
 });
 
 module.exports = mongoose.model('Request', RequestSchema);
