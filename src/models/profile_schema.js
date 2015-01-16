@@ -12,6 +12,6 @@ var enums = require('./enums');
 module.exports = {
     prefs: {
         units: { type: String, enum: enums.units, default: "metric" },
-        selectedCategories: [{type: String, enum: enum.requestCategors}]
+        selectedCategories: [{type: String, enum: enum.requestCategories}]
     }
 };
