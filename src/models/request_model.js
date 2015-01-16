@@ -22,7 +22,7 @@ var RequestSchema = common.newSchema({
     creationDate: { type: Date, default: Date.now }, // today
     expieryDate: { type: Date, default: Date.now + 2d }, // today plus 2 days
     earliestWorkStartDate: { type: Date, default: Date.now }, 
-    latestWorkStartDate: { type: Date, default: moment(Date.now).add(2,'days') }, // today plus 2 days
+    latestWorkStartDate: { type: Date, default: moment().add(2,'days') }, // today plus 2 days
     workDuration:  { type: Number, min: 1, default: 60 } // Estimated working time in minutes
 });
 
