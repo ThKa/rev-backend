@@ -14,7 +14,7 @@ var mongoose = require('ypbackendlib').mongoose,
 
 var ApplicationSchema = common.newSchema({
     applicant: { type: ObjectId, ref: 'User', required: true },
-    request: { type: ObjectID, ref: 'Request', required: true },
+    request: { type: ObjectId, ref: 'Request', required: true },
     status: { type: String, enum: enums.applicationStatus, default: "applied" },
     applicationTimestamp: { type: Date, default: Date.now } // now
     
